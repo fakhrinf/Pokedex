@@ -6,6 +6,15 @@ public class Pokemon {
     private String type;
     private String catchprobability;
     private String detail;
+    private int imgdata;
+
+    public int getImgdata() {
+        return imgdata;
+    }
+
+    public void setImgdata(int imgdata) {
+        this.imgdata = imgdata;
+    }
 
     public String getDetail() {
         return detail;

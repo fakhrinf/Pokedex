@@ -1,5 +1,7 @@
 package com.fakhrinf.pokedex.model;
 
+import com.fakhrinf.pokedex.R;
+
 import java.util.ArrayList;
 
 public class PokemonData {
@@ -20,6 +22,24 @@ public class PokemonData {
             "weedle",
             "kakuna",
             "beedrill"
+    };
+
+    private static int[] pokemonimage = {
+            R.drawable.bulbasaur,
+            R.drawable.ivysaur,
+            R.drawable.venusaur,
+            R.drawable.charmander,
+            R.drawable.charmeleon,
+            R.drawable.charizard,
+            R.drawable.squirtle,
+            R.drawable.wartortle,
+            R.drawable.blastoise,
+            R.drawable.caterpie,
+            R.drawable.metapod,
+            R.drawable.butterfree,
+            R.drawable.weedle,
+            R.drawable.kakuna,
+            R.drawable.beedrill
     };
 
     private static String[] pokemontype = {
@@ -85,6 +105,7 @@ public class PokemonData {
             pokemon.setType(pokemontype[i]);
             pokemon.setCatchprobability(pokemoncatch[i]);
             pokemon.setDetail(pokemondetail[i]);
+            pokemon.setImgdata(pokemonimage[i]);
             list.add(pokemon);
         }
 
